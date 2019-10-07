@@ -1,10 +1,23 @@
 /**
- * Carlos Tello
- * Word Analyzer
- * CEN-3024C
- * Soft Development 1
+ * @author carlostello
+ * 
+ * Fibonacci sequence -
+ * CEN3024C -
+ * Soft Development 1 -
+ * 
+ * Fibonacci sequence in both recursion and iteration
+ * Calculating runtime efficiency
  */
 
+/**
+ * <h1>
+ *Program to generate Fibonacci sequence in two different ways, recursion, and iteration.
+ * Set to return first 20 positions in sequence.</h1>
+ *
+ * @author Carlos Tello
+ * @version 1.0
+ * @since 10-07-2019
+ */
 public class Fibonacci {
 
 	public static void main(String[] args) {
@@ -38,7 +51,14 @@ public class Fibonacci {
 	} //end of main
 
 	
-	
+	/**
+	 * Recursion method, set to return first 20 positions of the Fibonacci sequence.
+	 * 
+	 * @param i value passed from main method call
+	 * @return current number in Fibonacci sequence
+	 * 
+	 * 
+	 */
 	public static long fibNum(int i) {
 		
 		/**
@@ -49,6 +69,7 @@ public class Fibonacci {
 		
 		/**
 		 * @param fibTemp
+		 * @return current number in Fibonacci sequence
 		 * Temporary parameter to hold the recursion
 		 */
 		long fibTemp = fibNum(i - 1) + fibNum (i - 2);
@@ -56,6 +77,13 @@ public class Fibonacci {
 	}//end of fibNum
 	
 	
+	
+	
+	/**
+	 * Iteration method, set to print first 20 positions of the Fibonacci sequence.
+	 * 
+	 * @param counter value passed from main method call to determine number of positions to return
+	 */
 	public static void fibNumIt (int counter) {
 		
 		/**
@@ -63,7 +91,8 @@ public class Fibonacci {
 		 * @param f1, f2, f3
 		 * @param temp
 		 * 
-		 * Iteration to produce fibonacci sequence
+		 * 
+		 * Iteration to produce Fibonacci sequence
 		 */
 		long startTime = System.nanoTime();
 		System.out.println("Start time:" + startTime);
@@ -86,7 +115,7 @@ public class Fibonacci {
 		startTime = System.nanoTime();
 		System.out.println("End time:" + startTime);
 		System.out.println("----------------------");
-	}
+	}//end of fibNumIt
 	
 }
 
