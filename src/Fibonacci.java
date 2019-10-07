@@ -1,3 +1,9 @@
+/**
+ * Carlos Tello
+ * Word Analyzer
+ * CEN-3024C
+ * Soft Development 1
+ */
 
 public class Fibonacci {
 
